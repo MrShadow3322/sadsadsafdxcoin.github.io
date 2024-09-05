@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    border-bottom: 2px solid #444;
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #ff6600;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #1e1e1e, #333);
+}
+
+.page {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+#home {
+    display: block;
+}
+
+.balance {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-top: 20px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ff6600;
+}
+
+.balance img {
+    width: 40px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+h2 {
+    color: #ff6600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+button {
+    background-color: #444;
+    border: none;
+    color: #e0e0e0;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+#walletAddress {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px 0;
+    border-top: 2px solid #444;
+}
+
+.nav-button {
+    background: #444;
+    border: none;
+    color: #e0e0e0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 14px;
+}
+
+.nav-button:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#walletDisplay {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+
+#walletDisplay span {
+    color: #ff6600;
+    font-weight: bold;
+}
